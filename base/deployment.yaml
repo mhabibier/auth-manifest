@@ -1,3 +1,5 @@
+# Deployment for Auth Microservice
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -42,7 +44,7 @@ spec:
         - name: harbor-secret
       containers:
         - name: auth-service
-          image: harbor.sxdentrypoint.my.id/test/auth-svc:v1
+          image: harbor.sxdentrypoint.my.id/devsecops/auth-svc:v1
           imagePullPolicy: Always   # Always pull to pick up tag updates on re-deploy
           ports:
             - name:          http

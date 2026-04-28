@@ -1,10 +1,12 @@
+# Service for Auth Microservice
+
 apiVersion: v1
 kind: Service
 metadata:
   name: auth-service
   namespace: auth-service
   labels:
-    app.kubernetes.io/name:      auth-microservice
+    app.kubernetes.io/name:      auth-service
     app.kubernetes.io/component: server
 spec:
   type: ClusterIP
@@ -24,7 +26,7 @@ spec:
 #   name: auth-service-np
 #   namespace: auth-service
 #   labels:
-#     app.kubernetes.io/name:      auth-microservice
+#     app.kubernetes.io/name:      auth-service
 #     app.kubernetes.io/component: server-nodeport
 # spec:
 #   type: NodePort
