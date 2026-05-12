@@ -1,0 +1,6 @@
+projectKey=auth-service
+serverUrl=https://sonar.sxdentrypoint.my.id
+serverVersion=10.3.0.82913
+dashboardUrl=https://sonar.sxdentrypoint.my.id/dashboard?id=auth-service
+ceTaskId=AZ4dcS2J8t7cQ3cge7Zi
+ceTaskUrl=https://sonar.sxdentrypoint.my.id/api/ce/task?id=AZ4dcS2J8t7cQ3cge7Zi

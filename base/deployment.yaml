@@ -44,7 +44,7 @@ spec:
         - name: harbor-secret
       containers:
         - name: auth-service
-          image: harbor.sxdentrypoint.my.id/devsecops/auth-svc:v1
+          image: harbor.sxdentrypoint.my.id/devsecops/auth-svc:197617f0
           imagePullPolicy: Always
           ports:
             - name:          http
