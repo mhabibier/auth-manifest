@@ -17,8 +17,8 @@ spec:
   strategy:
     type: RollingUpdate
     rollingUpdate:
-      maxSurge:       1   # Spin up 1 extra pod before terminating old ones
-      maxUnavailable: 0   # Zero downtime — never kill a pod before its replacement is ready
+      maxSurge:       1
+      maxUnavailable: 0
   template:
     metadata:
       labels:
@@ -45,7 +45,7 @@ spec:
       containers:
         - name: auth-service
           image: harbor.sxdentrypoint.my.id/devsecops/auth-svc:v1
-          imagePullPolicy: Always   # Always pull to pick up tag updates on re-deploy
+          imagePullPolicy: Always
           ports:
             - name:          http
               containerPort: 3000
@@ -115,7 +115,7 @@ spec:
               memory: "512Mi"
           volumeMounts:
             - name:      tmp
-              mountPath: /tmp   # Writable scratch space (readOnlyRootFilesystem = true)
+              mountPath: /tmp
       volumes:
         - name: tmp
           emptyDir: {}   # Ephemeral, cleared on pod restart
